@@ -1,9 +1,9 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'react';
 
 export const metadata: Metadata = {
-  title: 'EducaGam - Plataforma Gamificada',
-  description: 'Aprender ficou mais divertido!',
-}
+  title: 'EducaGam',
+  description: 'Plataforma Gamificada de Aprendizagem',
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,5 +12,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
       </body>
     </html>
-  )
+  );
 }
